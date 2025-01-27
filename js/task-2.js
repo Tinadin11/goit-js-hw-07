@@ -27,14 +27,6 @@ const images = [
 
  const gallery = document.querySelector('.gallery');
 
-// const template = images.map(({ url, alt }) => `<li>
-//         <img src="${url}" alt="${alt}">
-//       </li>`
-// ).join('');
-
-// gallery.insertAdjacentHTML("beforeend", template);
-
-
 const galleryMarkup = images.reduce(
   (acc, { alt, url }) =>
     (acc += `<li><img src="${url}" alt="${alt}" width = "300" height = "auto"></li>`),
@@ -42,3 +34,13 @@ const galleryMarkup = images.reduce(
 );
 
 gallery.insertAdjacentHTML('beforeend', galleryMarkup);
+
+
+
+
+
+
+
+
+
+
